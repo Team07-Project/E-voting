@@ -1,0 +1,150 @@
+.fullscreen {
+  width: 920px;
+  height: 100vh;
+  background: transparent;
+  font-family: 'Sunflower';
+}
+.fullscreen .container {
+  padding: 15px;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fullscreen .container .card {
+  overflow: hidden;
+  width: 30%;
+  height: 70%;
+  background: #fff;
+  box-shadow: 1px 22px 44px rgba(0, 0, 0, 0.19);
+  transition: 0.6s;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+}
+.fullscreen .container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 1px 12px 34px rgba(0, 0, 0, 0.31);
+}
+.fullscreen .container .card:hover .sinopse {
+  opacity: 1;
+  transition-delay: 0.4s;
+}
+.fullscreen .container .card:hover .sinopse .view {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 0.6s;
+  transition-delay: 1s;
+}
+.fullscreen .container .card:hover .sinopse .content-sinopse .text {
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+.fullscreen .container .card:hover .sinopse .content-sinopse .title {
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.fullscreen .container .card:hover .date {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.fullscreen .container .card:hover .content {
+  transform: translateY(100%);
+  opacity: 0;
+}
+.fullscreen .container .card .date {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  transition: 0.8s;
+}
+.fullscreen .container .card .date .tv_ico img {
+  width: 12px;
+  vertical-align: baseline;
+  margin-left: 6px;
+}
+.fullscreen .container .card .content {
+  transition: 0.8s;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  padding: 25px 25px 50px 25px;
+}
+.fullscreen .container .card .content .title {
+  width: 100%;
+  color: #fff;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 12px;
+}
+.fullscreen .container .card .content .text {
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+.fullscreen .container .card .sinopse {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 25px 50px 25px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff;
+  font-weight: 300;
+  opacity: 0;
+  transition: 0.8s;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.fullscreen .container .card .sinopse iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-left: -30px;
+  height: 260px;
+}
+.fullscreen .container .card .sinopse .view {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.fullscreen .container .card .sinopse .content-sinopse .title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transform: translateY(-100%);
+  transition: 0.6s;
+}
+.fullscreen .container .card .sinopse .content-sinopse .text {
+  transform: translateY(100%);
+  transition: 0.6s;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 14px;
+}
+.fullscreen .container .card_1 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.88)), url("https://w.wallhaven.cc/full/43/wallhaven-43y676.jpg") no-repeat center/cover;
+}
+.fullscreen .container .card_2 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.88)), url("https://w.wallhaven.cc/full/43/wallhaven-43y676.jpg") no-repeat center/cover;
+}
+.fullscreen .container .card_3 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.88)), url("https://w.wallhaven.cc/full/43/wallhaven-43y676.jpg") no-repeat center/cover;
+}
